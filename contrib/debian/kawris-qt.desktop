@@ -1,0 +1,13 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Kawris Core
+Comment=Kawris P2P Cryptocurrency
+Comment[de]=Verbinde mit dem Kawris peer-to-peer Netzwerk
+Comment[fr]=Kawris, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=Kawris, eşten eşe kriptografik sanal para birimi
+Exec=kawris-qt %u
+Terminal=false
+Type=Application
+Icon=kawris128
+MimeType=x-scheme-handler/kawris;
+Categories=Office;Finance;

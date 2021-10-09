@@ -1,0 +1,6 @@
+usr/local/bin/kawris-qt usr/bin
+share/pixmaps/kawris32.xpm usr/share/pixmaps
+share/pixmaps/kawris16.xpm usr/share/pixmaps
+share/pixmaps/kawris128.png usr/share/pixmaps
+debian/kawris-qt.desktop usr/share/applications
+debian/kawris-qt.protocol usr/share/kde4/services/

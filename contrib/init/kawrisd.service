@@ -1,0 +1,22 @@
+[Unit]
+Description=Kawris's distributed currency daemon
+After=network.target
+
+[Service]
+User=kawriscore
+Group=kawriscore
+
+Type=forking
+PIDFile=/var/lib/kawrisd/kawrisd.pid
+ExecStart=/usr/bin/kawrisd -daemon -pid=/var/lib/kawrisd/kawrisd.pid \
+-conf=/etc/kawriscore/kawris.conf -datadir=/var/lib/kawrisd -disablewallet
+
+Restart=always
+PrivateTmp=true
+TimeoutStopSec=60s
+TimeoutStartSec=2s
+StartLimitInterval=120s
+StartLimitBurst=5
+
+[Install]
+WantedBy=multi-user.target
